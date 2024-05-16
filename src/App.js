@@ -1,9 +1,11 @@
-import MainLayout from './pages/MainLayout';
+import AppRouter from "./router/AppRouter";
+
+
 
 function App() {
   return (
     <div>
-      <MainLayout />
+      <AppRouter/>
     </div>
   );
 }
