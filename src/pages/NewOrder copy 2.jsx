@@ -17,8 +17,7 @@ const NewOrder = () => {
         register,
         handleSubmit,
         watch,
-        formState: { errors },
-        reset
+        formState: { errors }
     } = useForm(
         {
             defaultValues: {
@@ -57,9 +56,6 @@ const NewOrder = () => {
 
             const result = await response.json();
             // setCreatedata(result);
-            // Formu temizle
-            reset(); // Burada reset() kullanın
-            navigate("/")
         } catch (error) {
             // setError(error);
             console.log(error);
